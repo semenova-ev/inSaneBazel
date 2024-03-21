@@ -1,3 +1,5 @@
+package binary;
+
 public class InfiniteLoop {
     public static void main(String[] args) throws InterruptedException {
         int i = 0;
