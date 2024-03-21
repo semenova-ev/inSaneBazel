@@ -2,6 +2,3 @@ module(
     name = "example_project",
     version = "1.0.0",
 )
-
-bazel_dep(name = "rules_jvm_external", version = "4.5")
-
