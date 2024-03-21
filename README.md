@@ -1,31 +1,17 @@
-# bazel/inSaneBazel
+In this template:
+- The `sample` target in `src/main/java/com/example/BUILD` is a buildable Java library.
+- The `main` target in `src/main/java/com/example/BUILD` is a runnable Java binary that depends on the `sample` library.
+- The `sample_test` target in `src/test/java/com/example/BUILD` is a testable Java test that tests the `sample` library.
 
+You can build, run, and test the targets using the following Bazel commands:
 
+```bash
+# Build the sample library
+bazel build //src/main/java/com/example:sample
 
-## Getting Started
+# Run the main binary
+bazel run //src/main/java/com/example:main
 
-Download links:
-
-SSH clone URL: ssh://git@git.jetbrains.team/bazel/inSaneBazel.git
-
-HTTPS clone URL: https://git.jetbrains.team/bazel/inSaneBazel.git
-
-
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
-## Prerequisites
-
-What things you need to install the software and how to install them.
-
+# Run the tests
+bazel test //src/test/java/com/example:sample_test
 ```
-Examples
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a production system.
-
-## Resources
-
-Add links to external resources for this project, such as CI server, bug tracker, etc.
