@@ -5,7 +5,7 @@ java_test(
     srcs = ["SampleTest.java"],
     test_class = "test.SampleTest",
     deps = [
-        "//src/build:sample",
+        "//src/build:build_compiling",
     ],
 )
 
@@ -14,7 +14,7 @@ java_test(
     srcs = ["FailingTest.java"],
     test_class = "test.FailingTest",
     deps = [
-        "//src/build:sample",
+        "//src/build:build_compiling",
     ],
 )
 

@@ -4,7 +4,7 @@ java_binary(
     name = "run_sample",
     srcs = ["Main.java"],
     main_class = "binary.Main",
-    deps = ["//src/build:sample"],
+    deps = ["//src/build:build_compiling"],
 )
 
 java_binary(
