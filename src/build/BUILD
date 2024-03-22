@@ -13,6 +13,6 @@ java_library(
 
 run_binary(
     name = "build_infinite_loop",
-    tool = "//src/binary:infinite_loop",
+    tool = "//src/binary:run_infinite_loop",
     outs = ["this_will_not_be_created"],
 )
