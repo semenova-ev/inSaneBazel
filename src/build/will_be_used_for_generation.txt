@@ -1,0 +1,7 @@
+package build;
+
+public class Generated {
+    public static String getGeneratedMessage() {
+        return "I'm generated!";
+    }
+}

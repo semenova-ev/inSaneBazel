@@ -11,8 +11,21 @@ java_library(
     srcs = ["NotCompiling.java"],
 )
 
+java_library(
+    name = "build_uses_generated_code",
+    srcs = ["UsesGeneratedCode.java", ":build_generate_code"],
+)
+
+genrule(
+    name = "build_generate_code",
+    srcs = [":will_be_used_for_generation.txt"],
+    outs = ["Generated.java"],
+    cmd = "cat $(location //src/build:will_be_used_for_generation.txt) > $@",
+)
+
 run_binary(
     name = "build_infinite_loop",
     tool = "//src/binary:run_infinite_loop",
     outs = ["this_will_not_be_created"],
+    tags = ["manual"],
 )
