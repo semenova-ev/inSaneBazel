@@ -4,3 +4,5 @@ module(
 )
 
 bazel_dep(name = "aspect_bazel_lib", version = "2.5.3")
+
+bazel_dep(name = "rules_kotlin", version = "1.9.6")

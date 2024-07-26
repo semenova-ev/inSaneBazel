@@ -1,9 +1,9 @@
 package build;
 
-import build.Generated;
+import abc.build.Generated2;
 
 public class UsesGeneratedCode {
     public static String getMessage() {
-        return Generated.getGeneratedMessage();
+        return Generated1.getGeneratedMessage() + Generated2.getGeneratedMessage();
     }
 }
